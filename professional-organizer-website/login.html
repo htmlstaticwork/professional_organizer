@@ -34,6 +34,34 @@
             right: -100px;
             z-index: 1;
         }
+
+        .divider {
+            position: relative;
+            text-align: center;
+        }
+        .divider::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: #eee;
+            z-index: 0;
+        }
+        .divider span {
+            position: relative;
+            background: white;
+            padding: 0 15px;
+            z-index: 1;
+            color: #999;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        [data-theme="dark"] .divider span { background: #1a1a1a; }
+        [data-theme="dark"] .divider::before { background: #333; }
+        [data-theme="dark"] .social-btn { border-color: #333 !important; background: transparent; color: white !important; }
+        [data-theme="dark"] .social-btn:hover { background: rgba(255,255,255,0.05); }
     </style>
 </head>
     <div class="container-fluid bg-light-alt min-vh-100 d-flex align-items-center justify-content-center p-4" data-theme="light">
@@ -69,6 +97,21 @@
                         </div>
                         <button type="submit" class="btn btn-primary w-100 py-3 btn-shine mb-4">Sign In</button>
                         
+                        <div class="divider mb-4">
+                            <span>OR CONTINUE WITH</span>
+                        </div>
+
+                        <div class="d-flex gap-3 mb-4">
+                            <button type="button" class="btn btn-outline-light w-100 py-2 d-flex align-items-center justify-content-center border-2 social-btn" style="border-color: #eee;">
+                                <img src="https://www.google.com/images/branding/googleg/1x/googleg_standard_color_128dp.png" alt="Google" style="width: 20px;" class="me-2">
+                                <span class="small fw-bold text-dark">Google</span>
+                            </button>
+                            <button type="button" class="btn btn-outline-light w-100 py-2 d-flex align-items-center justify-content-center border-2 social-btn" style="border-color: #eee;">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" alt="Facebook" style="width: 20px;" class="me-2">
+                                <span class="small fw-bold text-dark">Facebook</span>
+                            </button>
+                        </div>
+
                         <div class="text-center">
                             <p class="text-secondary small">Don't have an account? <a href="signup.html" class="text-primary fw-bold text-decoration-none">Create an Account</a></p>
                         </div>

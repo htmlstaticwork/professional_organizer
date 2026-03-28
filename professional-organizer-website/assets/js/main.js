@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (menuToggle) {
         navLinks.forEach((link) => {
             link.addEventListener('click', () => {
-                if (window.innerWidth < 992) {
+                if (window.innerWidth < 1200 && !link.classList.contains('dropdown-toggle')) {
                     const bsCollapse = new bootstrap.Collapse(menuToggle);
                     bsCollapse.hide();
                 }
@@ -50,4 +50,38 @@ document.addEventListener('DOMContentLoaded', () => {
             form.classList.add('was-validated');
         }, false);
     });
+
+    // RTL Toggle Support
+    const rtlToggle = document.getElementById('rtl-toggle');
+    const htmlElem = document.documentElement;
+
+    // Load saved RTL state
+    const savedDir = localStorage.getItem('site-direction') || 'ltr';
+    htmlElem.setAttribute('dir', savedDir);
+    updateRTLIcon(savedDir);
+
+    if (rtlToggle) {
+        rtlToggle.addEventListener('click', () => {
+            const currentDir = htmlElem.getAttribute('dir');
+            const newDir = currentDir === 'rtl' ? 'ltr' : 'rtl';
+            
+            htmlElem.setAttribute('dir', newDir);
+            localStorage.setItem('site-direction', newDir);
+            updateRTLIcon(newDir);
+        });
+    }
+
+    function updateRTLIcon(dir) {
+        if (!rtlToggle) return;
+        const icon = rtlToggle.querySelector('i');
+        if (dir === 'rtl') {
+            icon.classList.remove('bi-translate');
+            icon.classList.add('bi-arrow-left-right');
+            rtlToggle.setAttribute('title', 'Switch to LTR');
+        } else {
+            icon.classList.remove('bi-arrow-left-right');
+            icon.classList.add('bi-translate');
+            rtlToggle.setAttribute('title', 'Switch to RTL');
+        }
+    }
 });
