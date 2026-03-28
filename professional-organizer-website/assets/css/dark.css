@@ -1,0 +1,42 @@
+
+/* Dark Mode Overrides */
+[data-theme="dark"] {
+    --bg: #0B1F1A;
+    --surface: #132F2A;
+    --text-primary: #E5E7EB;
+    --text-secondary: #9CA3AF;
+    --accent: #FACC15;
+    --primary: #5BA88D;
+    --glass-bg: rgba(19, 47, 42, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .bg-light-alt {
+    background-color: #0E2621;
+}
+
+[data-theme="dark"] .navbar-scrolled {
+    background-color: #132F2A !important;
+}
+
+[data-theme="dark"] .form-control {
+    background-color: #1a3c36;
+    border-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+[data-theme="dark"] .hero::before {
+    background: linear-gradient(to right, rgba(11, 31, 26, 0.9), rgba(11, 31, 26, 0.5));
+}
+
+[data-theme="dark"] .dropdown-menu {
+    background-color: #132F2A;
+}
+
+[data-theme="dark"] .dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="dark"] hr {
+    border-color: rgba(255, 255, 255, 0.1);
+}

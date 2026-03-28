@@ -1,0 +1,62 @@
+/* Animations & Transitions */
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.smooth-transition {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Soft Hover States */
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.03);
+}
+
+/* Hover Shine Effect for buttons */
+.btn-shine {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-shine::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(45deg);
+    transition: 0.6s;
+    opacity: 0;
+}
+
+.btn-shine:hover::after {
+    left: 100%;
+    opacity: 1;
+}
+
+/* Floating Animation */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.floating {
+    animation: float 4s ease-in-out infinite;
+}
