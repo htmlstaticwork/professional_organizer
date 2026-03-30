@@ -100,6 +100,43 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--primary) !important;
 }
 
+@media (max-width: 1199.98px) {
+    .navbar {
+        background-color: var(--surface) !important;
+        padding: 1rem 0;
+        box-shadow: var(--shadow);
+    }
+
+    .navbar-collapse {
+        background: var(--surface);
+        margin-top: 1rem;
+        padding: 1.5rem;
+        border-radius: 20px;
+        box-shadow: none; /* Shadow already on navbar */
+        border: none;
+        animation: bubbleUp 0.3s ease-out;
+    }
+    
+    .navbar-nav {
+        margin-bottom: 1.5rem;
+    }
+    
+    .nav-item {
+        margin-bottom: 0.5rem;
+    }
+    
+    .navbar .d-flex {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 1rem;
+    }
+
+    #theme-toggle, #rtl-toggle {
+        margin-left: 0;
+        padding-left: 0;
+    }
+}
+
 .btn-primary {
     background-color: var(--primary);
     border-color: var(--primary);
@@ -200,8 +237,10 @@ footer {
     background-color: #0E2621;
 }
 
-[data-theme="dark"] .navbar-toggler {
-    filter: invert(1);
+/* Navbar toggler themed via Bootstrap icon color in HTML */
+
+.navbar {
+    z-index: 1050; /* Ensure navbar is above all content */
 }
 
 [data-theme="dark"] .form-control {
