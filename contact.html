@@ -39,15 +39,17 @@
                     <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
                     <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
                 </ul>
-                <div class="d-flex align-items-center">
-                    <button id="rtl-toggle" class="me-2" title="Switch to RTL">
+                <div class="ms-auto d-flex align-items-center gap-3 flex-nowrap">
+                    <button id="rtl-toggle" class="" title="Switch to RTL">
                         <i class="bi bi-translate"></i>
                     </button>
-                    <button id="theme-toggle" class="me-3" title="Toggle Theme">
-                        <i class="bi bi-moon-stars"></i>
+                    <button id="theme-toggle" class="" title="Toggle Theme">
+                        <i class="bi bi-moon-fill"></i>
                     </button>
-                    <a href="login.html" class="btn btn-outline-primary me-2 px-3 py-2">Login</a>
-                    <a href="signup.html" class="btn btn-primary btn-shine">Sign Up</a>
+                    <div class="d-flex gap-2 gap-md-3 mt-3 mt-xl-0">
+                        <a href="login.html" class="btn btn-outline-primary">Login</a>
+                        <a href="signup.html" class="btn btn-primary btn-shine text-white">Sign Up</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -100,7 +102,7 @@
                 </div>
                 
                 <div class="col-lg-7 fade-up">
-                    <div class="glass-card p-5 shadow-sm border-0">
+                    <div class="glass-card p-5 shadow-sm border">
                         <form id="contactForm">
                             <div class="row g-4">
                                 <div class="col-md-6">
@@ -143,7 +145,7 @@
     <!-- Map Section -->
     <section class="section-padding pt-0">
         <div class="container fade-up">
-            <div class="glass-card p-2 shadow-lg border-0 mb-4" style="height: 450px; overflow: hidden; border-radius: 2rem;">
+            <div class="glass-card p-2 shadow-lg border mb-4" style="height: 450px; overflow: hidden; border-radius: 2rem;">
                 <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102046.12351239845!2d-79.9439123!3d32.7831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88fe7a42dcaea253%3A0x335c93ef1420ae2!2sCharleston%2C%20SC!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
                     width="100%" 
@@ -161,7 +163,7 @@
     </section>
 
     <!-- Post-Contact Information -->
-    <section class="section-padding bg-light-alt text-dark">
+    <section class="section-padding bg-light-alt">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 fade-up">
@@ -208,7 +210,7 @@
                                 <span class="fw-bold">Saturday</span>
                                 <span class="text-primary">10:00 AM - 4:00 PM</span>
                             </li>
-                            <li class="d-flex justify-content-between mb-3 border-bottom pb-2 text-muted">
+                            <li class="d-flex justify-content-between mb-3 border-bottom pb-2 text-secondary">
                                 <span class="fw-bold">Sunday</span>
                                 <span>Closed (Family Time)</span>
                             </li>
@@ -227,9 +229,16 @@
     <footer>
         <div class="container">
             <div class="row g-4 mb-5">
-                <div class="col-lg-4">
+                                <div class="col-lg-4">
                     <h3 class="mb-4 brand-logo"><img src="assets/images/logo.png" alt="Logo">Clarity<span class="text-accent">&</span>Calm</h3>
                     <p class="text-secondary">We specialize in providing structured, empathetic home recovery services. Our mission is to restore peace and order to lives affected by clutter and hoarding.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="social-icon" title="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon" title="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="social-icon" title="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="social-icon" title="YouTube"><i class="bi bi-youtube"></i></a>
+                    </div>
                 </div>
                 <div class="col-lg-2">
                     <h5 class="mb-4">Services</h5>
@@ -255,18 +264,7 @@
                 </div>
             </div>
             <hr class="opacity-10">
-            <div class="row align-items-center mt-4 pt-2">
-                <div class="col-md-6">
-                    <p class="text-secondary small mb-0">&copy; 2026 Clarity & Calm. All rights reserved.</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <div class="d-flex justify-content-md-end gap-3 mt-3 mt-md-0">
-                        <a href="#" class="text-secondary fs-5"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="text-secondary fs-5"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="text-secondary fs-5"><i class="bi bi-linkedin"></i></a>
-                    </div>
-                </div>
-            </div>
+            <div class="row mt-4 pt-2"><div class="col-12 text-center"><p class="text-secondary small mb-0">&copy; 2026 Clarity & Calm. All rights reserved.</p></div></div>
         </div>
     </footer>
 
@@ -280,3 +278,5 @@
     <script src="assets/js/main.js"></script>
 </body>
 </html>
+
+

@@ -11,8 +11,27 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Mobile Menu Toggle Fix (if needed beyond Bootstrap defaults)
+    // Active Link Highlighting
+    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
     const navLinks = document.querySelectorAll('.nav-link');
+    
+    navLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        if (href === currentPath) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+
+        // Home Dropdown Support
+        if ((currentPath === 'index.html' || currentPath === 'home-2.html') && link.classList.contains('dropdown-toggle')) {
+            if (link.textContent.trim() === 'Home') {
+                link.classList.add('active');
+            }
+        }
+    });
+
+    // Mobile Menu Toggle Fix (if needed beyond Bootstrap defaults)
     const menuToggle = document.getElementById('navbarNav');
     if (menuToggle) {
         navLinks.forEach((link) => {
@@ -73,14 +92,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateRTLIcon(dir) {
         if (!rtlToggle) return;
-        const icon = rtlToggle.querySelector('i');
+        // Keep the translate icon symbol constant as per user request
         if (dir === 'rtl') {
-            icon.classList.remove('bi-translate');
-            icon.classList.add('bi-arrow-left-right');
             rtlToggle.setAttribute('title', 'Switch to LTR');
         } else {
-            icon.classList.remove('bi-arrow-left-right');
-            icon.classList.add('bi-translate');
             rtlToggle.setAttribute('title', 'Switch to RTL');
         }
     }

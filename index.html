@@ -52,15 +52,17 @@
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
                 </ul>
-                <div class="d-flex align-items-center">
-                    <button id="rtl-toggle" class="me-2" title="Switch to RTL">
+                <div class="ms-auto d-flex align-items-center gap-3 flex-nowrap">
+                    <button id="rtl-toggle" class="" title="Switch to RTL">
                         <i class="bi bi-translate"></i>
                     </button>
-                    <button id="theme-toggle" class="me-3" title="Toggle Theme">
-                        <i class="bi bi-moon-stars"></i>
+                    <button id="theme-toggle" class="" title="Switch to Dark Mode">
+                        <i class="bi bi-moon-fill"></i>
                     </button>
-                    <a href="login.html" class="btn btn-outline-primary me-2 px-3 py-2">Login</a>
-                    <a href="signup.html" class="btn btn-primary btn-shine">Sign Up</a>
+                    <div class="d-flex gap-2 gap-md-3 mt-3 mt-xl-0">
+                        <a href="login.html" class="btn btn-outline-primary">Login</a>
+                        <a href="signup.html" class="btn btn-primary btn-shine text-white">Sign Up</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -69,15 +71,15 @@
     <!-- Hero Section -->
     <section class="hero" style="background-image: url('assets/images/hero_index.png');">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 hero-content">
-                    <span class="badge rounded-pill px-3 py-2 mb-3"
-                        style="background: rgba(75, 127, 107, 0.1); color: var(--primary); font-weight: 600;">TRANSFORM
+            <div class="row justify-content-center">
+                <div class="col-lg-8 hero-content text-center">
+                    <span class="badge rounded-pill px-3 py-2 mb-3 mx-auto"
+                        style="background: rgba(75, 127, 107, 0.1); color: var(--primary); font-weight: 600; display: inline-block;">TRANSFORM
                         YOUR SPACE</span>
                     <h1 class="display-4 text-primary mb-4">A Supportive Path to Regaining Control.</h1>
-                    <p class="lead text-secondary mb-5">We provide gentle, non-judgmental professional organizing and
+                    <p class="lead text-secondary mb-5 mx-auto" style="max-width: 700px;">We provide gentle, non-judgmental professional organizing and
                         hoarding support services designed to help you rediscover the peace in your home.</p>
-                    <div class="d-flex flex-wrap gap-3">
+                    <div class="d-flex flex-wrap gap-3 justify-content-center">
                         <a href="services.html" class="btn btn-primary btn-shine btn-lg">Explore Services</a>
                         <a href="programs.html" class="btn btn-outline-primary btn-lg">Our Programs</a>
                     </div>
@@ -131,8 +133,8 @@
             <div class="row g-4">
                 <div class="col-lg-4 fade-up">
                     <div class="glass-card h-100 text-center">
-                        <div class="mb-4">
-                            <i class="bi bi-house-heart fs-1 text-primary"></i>
+                        <div class="mb-4 overflow-hidden rounded-4">
+                            <img src="assets/images/service_hoarding_card.png" alt="Hoarding Support" class="img-fluid w-100" style="height: 200px; object-fit: cover;">
                         </div>
                         <h3>Hoarding Support</h3>
                         <p class="text-secondary">Compassionate guidance for deep home recovery, focusing on mental
@@ -143,8 +145,8 @@
                 </div>
                 <div class="col-lg-4 fade-up">
                     <div class="glass-card h-100 text-center">
-                        <div class="mb-4">
-                            <i class="bi bi-box-seam fs-1 text-primary"></i>
+                        <div class="mb-4 overflow-hidden rounded-4">
+                            <img src="assets/images/service_organizing_card.png" alt="Professional Organizing" class="img-fluid w-100" style="height: 200px; object-fit: cover;">
                         </div>
                         <h3>Professional Organizing</h3>
                         <p class="text-secondary">Strategic decluttering systems to help you maintain order and
@@ -155,8 +157,8 @@
                 </div>
                 <div class="col-lg-4 fade-up">
                     <div class="glass-card h-100 text-center">
-                        <div class="mb-4">
-                            <i class="bi bi-stars fs-1 text-primary"></i>
+                        <div class="mb-4 overflow-hidden rounded-4">
+                            <img src="assets/images/service_recovery_card.png" alt="Post-Recovery Care" class="img-fluid w-100" style="height: 200px; object-fit: cover;">
                         </div>
                         <h3>Post-Recovery Care</h3>
                         <p class="text-secondary">Ongoing maintenance and counseling to ensure your new environment
@@ -216,7 +218,7 @@
                 </div>
             </div>
             <div class="row g-4">
-                <div class="col-md-3 fade-up">
+                <div class="col-md-6 col-lg-3 fade-up">
                     <div class="text-center">
                         <div class="glass-card mb-4 d-inline-flex p-4 rounded-circle"
                             style="width: 80px; height: 80px; align-items: center; justify-content: center;">
@@ -227,7 +229,7 @@
                             space challenges.</p>
                     </div>
                 </div>
-                <div class="col-md-3 fade-up">
+                <div class="col-md-6 col-lg-3 fade-up">
                     <div class="text-center">
                         <div class="glass-card mb-4 d-inline-flex p-4 rounded-circle"
                             style="width: 80px; height: 80px; align-items: center; justify-content: center;">
@@ -238,7 +240,7 @@
                             specifically to your pace.</p>
                     </div>
                 </div>
-                <div class="col-md-3 fade-up">
+                <div class="col-md-6 col-lg-3 fade-up">
                     <div class="text-center">
                         <div class="glass-card mb-4 d-inline-flex p-4 rounded-circle"
                             style="width: 80px; height: 80px; align-items: center; justify-content: center;">
@@ -249,7 +251,7 @@
                             living environment.</p>
                     </div>
                 </div>
-                <div class="col-md-3 fade-up">
+                <div class="col-md-6 col-lg-3 fade-up">
                     <div class="text-center">
                         <div class="glass-card mb-4 d-inline-flex p-4 rounded-circle"
                             style="width: 80px; height: 80px; align-items: center; justify-content: center;">
@@ -265,12 +267,12 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="section-padding bg-light-alt text-dark">
+    <section class="section-padding bg-light-alt">
         <div class="container">
             <div class="row justify-content-center mb-5 text-center fade-up">
                 <div class="col-lg-6">
                     <h2 class="h1">Stories of Home Recovery</h2>
-                    <p class="text-primary-emphasis">Real experiences from people who have rediscovered peace in their
+                    <p class="text-secondary">Real experiences from people who have rediscovered peace in their
                         homes.</p>
                 </div>
             </div>
@@ -387,7 +389,7 @@
                 <div class="col-lg-4 fade-up">
                     <div class="glass-card overflow-hidden p-0">
                         <div class="position-relative">
-                            <img src="assets/images/organized_home.png" alt="Blog 3" class="img-fluid w-100"
+                            <img src="assets/images/blog_sanctuary.png" alt="Blog 3" class="img-fluid w-100"
                                 style="height: 240px; object-fit: cover;">
                             <span class="badge bg-primary position-absolute top-0 start-0 m-3">RECOVERY</span>
                         </div>
@@ -421,11 +423,16 @@
     <footer>
         <div class="container">
             <div class="row g-4 mb-5">
-                <div class="col-lg-4">
-                    <h3 class="mb-4 brand-logo"><img src="assets/images/logo.png" alt="Logo">Clarity<span
-                            class="text-accent">&</span>Calm</h3>
-                    <p class="text-secondary">We specialize in providing structured, empathetic home recovery services.
-                        Our mission is to restore peace and order to lives affected by clutter and hoarding.</p>
+                                <div class="col-lg-4">
+                    <h3 class="mb-4 brand-logo"><img src="assets/images/logo.png" alt="Logo">Clarity<span class="text-accent">&</span>Calm</h3>
+                    <p class="text-secondary">We specialize in providing structured, empathetic home recovery services. Our mission is to restore peace and order to lives affected by clutter and hoarding.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="social-icon" title="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon" title="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="social-icon" title="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="social-icon" title="YouTube"><i class="bi bi-youtube"></i></a>
+                    </div>
                 </div>
                 <div class="col-lg-2">
                     <h5 class="mb-4">Services</h5>
@@ -451,18 +458,7 @@
                 </div>
             </div>
             <hr class="opacity-10">
-            <div class="row align-items-center mt-4 pt-2">
-                <div class="col-md-6">
-                    <p class="text-secondary small mb-0">&copy; 2026 Clarity & Calm. All rights reserved.</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <div class="d-flex justify-content-md-end gap-3 mt-3 mt-md-0">
-                        <a href="#" class="text-secondary fs-5"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="text-secondary fs-5"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="text-secondary fs-5"><i class="bi bi-linkedin"></i></a>
-                    </div>
-                </div>
-            </div>
+            <div class="row mt-4 pt-2"><div class="col-12 text-center"><p class="text-secondary small mb-0">&copy; 2026 Clarity & Calm. All rights reserved.</p></div></div>
         </div>
     </footer>
 
@@ -478,3 +474,4 @@
 </body>
 
 </html>
+

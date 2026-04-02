@@ -38,53 +38,48 @@
         }
         .divider span {
             position: relative;
-            background: white;
+            background: var(--surface);
             padding: 0 15px;
             z-index: 1;
-            color: #999;
+            color: var(--text-secondary);
             font-size: 0.8rem;
             font-weight: 600;
         }
-        [data-theme="dark"] .divider span { background: #1a1a1a; }
-        [data-theme="dark"] .divider::before { background: #333; }
-        [data-theme="dark"] .social-btn { border-color: #333 !important; background: transparent; color: white !important; }
+        [data-theme="dark"] .social-btn { border-color: rgba(255,255,255,0.1) !important; background: transparent; color: white !important; }
         [data-theme="dark"] .social-btn:hover { background: rgba(255,255,255,0.05); }
     </style>
 </head>
-    <div class="container-fluid bg-light-alt min-vh-100 d-flex align-items-center justify-content-center p-4" data-theme="light">
-        <div class="row w-100 justify-content-center">
-            <div class="col-lg-5 col-md-8 fade-up">
-                <div class="glass-card shadow-lg p-5 bg-white border-0">
+    <div class="container-fluid bg-light-alt min-vh-100 d-flex align-items-center justify-content-center p-2 p-md-4">
+        <div class="row w-100 justify-content-center my-4">
+            <div class="col-lg-6 col-md-10 col-sm-11 fade-up">
+                <div class="glass-card shadow-lg p-4 p-md-5 border">
                     <div class="text-center mb-5">
                         <a href="index.html" class="text-decoration-none">
-                            <h2 class="brand-logo mb-3"><img src="assets/images/logo.png" alt="Logo">Clarity<span class="text-accent">&</span>Calm</h2>
+                            <h2 class="brand-logo justify-content-center mb-3"><img src="assets/images/logo.png" alt="Logo">Clarity<span class="text-accent">&</span>Calm</h2>
                         </a>
+                        <h2 class="fw-bold h2 mb-2">Create Account</h2>
                         <p class="text-secondary small mt-2">Start your personalized recovery path today.</p>
-                    </div>
-
-                    <div class="mb-4 text-center">
-                        <h2 class="fw-bold h2">Create Account</h2>
                     </div>
 
                     <form>
                         <div class="row g-3">
-                            <div class="col-md-6 text-dark">
+                            <div class="col-md-6">
                                 <label class="form-label small fw-bold">First Name</label>
                                 <input type="text" class="form-control" placeholder="John" required style="padding: 10px 15px;">
                             </div>
-                            <div class="col-md-6 text-dark">
+                            <div class="col-md-6">
                                 <label class="form-label small fw-bold">Last Name</label>
                                 <input type="text" class="form-control" placeholder="Doe" required style="padding: 10px 15px;">
                             </div>
-                            <div class="col-md-12 text-dark">
+                            <div class="col-md-12">
                                 <label class="form-label small fw-bold">Email Address</label>
                                 <input type="email" class="form-control" placeholder="name@example.com" required style="padding: 10px 15px;">
                             </div>
-                            <div class="col-md-12 text-dark">
-                                <label class="form-label small fw-bold text-dark">Current Home Context (How can we help?)</label>
+                            <div class="col-md-12">
+                                <label class="form-label small fw-bold">Current Home Context (How can we help?)</label>
                                 <textarea class="form-control" rows="2" placeholder="Briefly describe the area you'd like to address..." style="padding: 10px 15px;"></textarea>
                             </div>
-                            <div class="col-md-12 text-dark">
+                            <div class="col-md-12">
                                 <label class="form-label small fw-bold">Password</label>
                                 <input type="password" class="form-control" placeholder="Create a secure password" required style="padding: 10px 15px;">
                             </div>
@@ -105,14 +100,14 @@
                             <span>OR REGISTER WITH</span>
                         </div>
 
-                        <div class="d-flex gap-3 mb-4">
-                            <button type="button" class="btn btn-outline-light w-100 py-2 d-flex align-items-center justify-content-center border-2 social-btn" style="border-color: #eee;">
+                        <div class="d-flex flex-column flex-md-row gap-2 gap-md-3 mb-4">
+                            <button type="button" class="btn btn-outline-primary w-100 py-2 d-flex align-items-center justify-content-center border-2 social-btn">
                                 <img src="https://www.google.com/images/branding/googleg/1x/googleg_standard_color_128dp.png" alt="Google" style="width: 20px;" class="me-2">
-                                <span class="small fw-bold text-dark">Google</span>
+                                <span class="small fw-bold">Google</span>
                             </button>
-                            <button type="button" class="btn btn-outline-light w-100 py-2 d-flex align-items-center justify-content-center border-2 social-btn" style="border-color: #eee;">
+                            <button type="button" class="btn btn-outline-primary w-100 py-2 d-flex align-items-center justify-content-center border-2 social-btn">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" alt="Facebook" style="width: 20px;" class="me-2">
-                                <span class="small fw-bold text-dark">Facebook</span>
+                                <span class="small fw-bold">Facebook</span>
                             </button>
                         </div>
                         
@@ -121,9 +116,7 @@
                         </div>
                     </form>
                 </div>
-                
-                <div class="text-center mt-4">
-                    <a href="index.html" class="text-secondary small text-decoration-none"><i class="bi bi-arrow-left me-2"></i>Back to Home</a>
+                    </div>
                 </div>
             </div>
         </div>
