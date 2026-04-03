@@ -33,12 +33,16 @@
     color: var(--text-primary) !important;
 }
 
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     color: var(--text-primary);
     background-color: var(--bg);
     line-height: 1.6;
-    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
