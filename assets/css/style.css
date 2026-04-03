@@ -29,6 +29,10 @@
     color: rgba(255, 255, 255, 0.4) !important;
 }
 
+[data-theme="dark"] .text-dark {
+    color: var(--text-primary) !important;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     color: var(--text-primary);
