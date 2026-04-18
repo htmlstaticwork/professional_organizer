@@ -7,6 +7,7 @@
     --text-secondary: #9CA3AF;
     --accent: #FACC15;
     --primary: #5BA88D;
+    --primary-rgb: 91, 168, 141;
     --glass-bg: rgba(19, 47, 42, 0.7);
     --glass-border: rgba(255, 255, 255, 0.1);
 }
