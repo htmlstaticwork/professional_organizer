@@ -44,184 +44,237 @@
                         <li>
                             <hr class="dropdown-divider opacity-10">
                         </li>
-                        <li><a class="dropdown-item rounded" href="#"><i class="bi bi-person me-2"></i>Dashboard</a>
+                        <li><a class="dropdown-item rounded" href="#"><i class="bi bi-person me-2"></i>Profile</a>
                         </li>
-                        <li><a class="dropdown-item rounded" href="#"><i class="bi bi-gear me-2"></i>Account
-                                Settings</a></li>
+                        <li><a class="dropdown-item rounded" id="theme-toggle" href="#"><i class="bi bi-moon-stars me-2"></i>Toggle Theme</a></li>
+                        <li><a class="dropdown-item rounded" href="#"><i class="bi bi-gear me-2"></i>Settings</a></li>
                         <li>
                             <hr class="dropdown-divider opacity-10">
                         </li>
                         <li><a class="dropdown-item rounded text-danger" href="login.html"><i
-                                    class="bi bi-box-arrow-right me-2"></i>Log Out</a></li>
+                                     class="bi bi-box-arrow-right me-2"></i>Log Out</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Dashboard Header -->
-    <header class="section-padding bg-light-alt" style="padding-top: 150px;">
+    <!-- Dashboard Content -->
+    <main class="section-padding flex-grow-1" style="padding-top: 130px; min-height: 100vh;">
         <div class="container">
-            <div class="row align-items-center g-4">
-                <div class="col-lg-8">
-                    <h1 class="display-5 text-primary mb-2">Welcome Back, Sarah.</h1>
-                    <p class="text-secondary lead">Your sanctuary is currently <span class="text-primary fw-bold">65%
-                            Recovered</span>. Keep moving forward at your own pace.</p>
+            <!-- Header & Welcome -->
+            <div class="row align-items-end g-4 mb-5">
+                <div class="col-lg-8 fade-up">
+                    <h1 class="display-5 fw-bold text-primary mb-2">Welcome Back, Sarah.</h1>
+                    <p class="text-secondary mb-0">"Small steps today create the sanctuary you deserve tomorrow."</p>
                 </div>
-                <div class="col-lg-4 text-lg-end">
-                    <a href="#booking" class="btn btn-primary btn-lg btn-shine">Book Consultation</a>
+                <div class="col-lg-4 text-lg-end fade-up">
+                    <div class="bg-primary-light bg-opacity-10 d-inline-flex align-items-center gap-3 p-2 px-3 rounded-pill">
+                        <span class="small fw-bold text-primary">Next Session:</span>
+                        <span class="small fw-bold text-dark">Oct 22, 2:00 PM</span>
+                        <a href="#booking" class="btn btn-primary btn-sm rounded-pill py-1">Join Call</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
 
-    <!-- Main Dashboard Body -->
-    <div class="section-padding pt-5">
-        <div class="container">
+            <!-- Quick Stats Bar -->
             <div class="row g-4 mb-5">
-                <!-- Progress Tracking -->
+                <div class="col-lg-3 col-sm-6 fade-up">
+                    <div class="glass-card p-4 text-center border-0 h-100">
+                        <div class="bg-primary-light bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 50px; height: 50px;">
+                            <i class="bi bi-calendar-check text-primary fs-4"></i>
+                        </div>
+                        <h2 class="mb-1">24</h2>
+                        <p class="text-secondary small mb-0">Days in Recovery</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 fade-up">
+                    <div class="glass-card p-4 text-center border-0 h-100">
+                        <div class="bg-primary-light bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 50px; height: 50px;">
+                            <i class="bi bi-box-seam text-primary fs-4"></i>
+                        </div>
+                        <h2 class="mb-1">12</h2>
+                        <p class="text-secondary small mb-0">Boxes Repurposed</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 fade-up">
+                    <div class="glass-card p-4 text-center border-0 h-100">
+                        <div class="bg-primary-light bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 50px; height: 50px;">
+                            <i class="bi bi-heart-pulse text-primary fs-4"></i>
+                        </div>
+                        <h2 class="mb-1">85%</h2>
+                        <p class="text-secondary small mb-0">Stress Reduction</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 fade-up">
+                    <div class="glass-card p-4 text-center border-0 h-100">
+                        <div class="bg-accent bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 50px; height: 50px;">
+                            <i class="bi bi-star text-accent fs-4"></i>
+                        </div>
+                        <h2 class="mb-1">3</h2>
+                        <p class="text-secondary small mb-0">Milestones Reached</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 mb-5">
+                <!-- Left Column: Active Recovery Plan -->
                 <div class="col-lg-8 fade-up">
-                    <div class="glass-card p-5 h-100 border-0 shadow-sm">
-                        <div class="d-flex justify-content-between align-items-center mb-5">
-                            <h3 class="mb-0">Recovery Analytics</h3>
-                            <span
-                                class="badge bg-primary-light bg-opacity-10 text-primary px-3 py-2 rounded-pill">Status:
-                                Active</span>
+                    <div class="glass-card p-4 p-md-5 h-100 border-0">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <h3 class="h4 mb-0">Active Recovery Plan</h3>
+                            <button class="btn btn-outline-primary btn-sm rounded-pill px-3">View Full Plan</button>
                         </div>
-
-                        <div class="mb-4">
-                            <div class="d-flex justify-content-between mb-2">
-                                <span class="fw-bold">Level 1: Living Area</span>
-                                <span class="text-primary fw-bold">100% Complete</span>
-                            </div>
-                            <div class="progress" style="height: 10px;">
-                                <div class="progress-bar bg-primary" role="progressbar" style="width: 100%"></div>
-                            </div>
-                        </div>
-
-                        <div class="mb-4">
-                            <div class="d-flex justify-content-between mb-2">
-                                <span class="fw-bold">Level 2: Kitchen & Pantry</span>
-                                <span class="text-primary fw-bold">85% Complete</span>
-                            </div>
-                            <div class="progress" style="height: 10px;">
-                                <div class="progress-bar bg-primary" role="progressbar" style="width: 85%"></div>
-                            </div>
-                        </div>
-
-                        <div class="mb-4">
-                            <div class="d-flex justify-content-between mb-2">
-                                <span class="fw-bold">Level 3: Personal Sanctuary (Bedroom)</span>
-                                <span class="text-accent fw-bold">40% Complete</span>
-                            </div>
-                            <div class="progress" style="height: 10px;">
-                                <div class="progress-bar bg-accent" role="progressbar" style="width: 40%"></div>
-                            </div>
-                        </div>
-
-                        <div class="mt-5 p-4 bg-light-alt rounded-4">
-                            <div class="row align-items-center text-center text-md-start">
-                                <div class="col-md-2 mb-3 mb-md-0">
-                                    <div class="glass-card d-inline-flex p-3 rounded-circle text-primary border">
-                                        <i class="bi bi-award fs-3"></i>
+                        
+                        <div class="space-y-4">
+                            <!-- Zone 1 -->
+                            <div class="p-4 rounded-4 border bg-light-alt mb-4">
+                                <div class="row align-items-center">
+                                    <div class="col-md-3">
+                                        <h5 class="mb-0 fw-bold">Living Room</h5>
+                                        <p class="text-secondary smaller mb-0">Zone Status: Initial</p>
                                     </div>
+                                    <div class="col-md-7 py-3 py-md-0">
+                                        <div class="progress" style="height: 8px;">
+                                            <div class="progress-bar bg-primary" role="progressbar" style="width: 100%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 text-md-end text-primary fw-bold">100%</div>
                                 </div>
-                                <div class="col-md-10">
-                                    <h5 class="mb-1 text-primary">Next Milestone: Habit Stacking</h5>
-                                    <p class="text-secondary small mb-0">Complete your "3-minute nightly reset" for 5
-                                        consecutive days to unlock your Maintenance Toolkit.</p>
+                            </div>
+
+                            <!-- Zone 2 -->
+                            <div class="p-4 rounded-4 border bg-light-alt mb-4 border-2 border-primary">
+                                <div class="row align-items-center">
+                                    <div class="col-md-3">
+                                        <h5 class="mb-0 fw-bold">Kitchen & Pantry</h5>
+                                        <p class="text-secondary smaller mb-0">Primary Focus</p>
+                                    </div>
+                                    <div class="col-md-7 py-3 py-md-0">
+                                        <div class="progress" style="height: 8px;">
+                                            <div class="progress-bar bg-primary" role="progressbar" style="width: 65%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 text-md-end text-primary fw-bold">65%</div>
                                 </div>
+                            </div>
+
+                            <!-- Zone 3 -->
+                            <div class="p-4 rounded-4 border bg-light-alt mb-0">
+                                <div class="row align-items-center">
+                                    <div class="col-md-3">
+                                        <h5 class="mb-0 fw-bold">Master Bedroom</h5>
+                                        <p class="text-secondary smaller mb-0">Upcoming Stage</p>
+                                    </div>
+                                    <div class="col-md-7 py-3 py-md-0">
+                                        <div class="progress" style="height: 8px;">
+                                            <div class="progress-bar bg-accent" role="progressbar" style="width: 15%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 text-md-end text-accent fw-bold">15%</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Recovery Log Table -->
+                        <div class="mt-5">
+                            <h5 class="mb-4 d-flex align-items-center gap-2"><i class="bi bi-clock-history text-primary"></i> Recovery Log</h5>
+                            <div class="table-responsive">
+                                <table class="table table-hover border-top">
+                                    <thead class="text-secondary small">
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>Action</th>
+                                            <th>Outcome</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="small">
+                                        <tr>
+                                            <td>Oct 15, 2026</td>
+                                            <td>Electronic Audit</td>
+                                            <td>34 lbs e-waste recycled</td>
+                                            <td><span class="badge bg-success bg-opacity-10 text-success rounded-pill px-2 pb-1">Verified</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Oct 12, 2026</td>
+                                            <td>Bulk Donation</td>
+                                            <td>4 boxes of linens donated</td>
+                                            <td><span class="badge bg-success bg-opacity-10 text-success rounded-pill px-2 pb-1">Verified</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Oct 08, 2026</td>
+                                            <td>Document Shredding</td>
+                                            <td>2 bins of paper processed</td>
+                                            <td><span class="badge bg-success bg-opacity-10 text-success rounded-pill px-2 pb-1">Verified</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Action Sidebar -->
+                <!-- Right Column: Micro-Tasks & Specialist -->
                 <div class="col-lg-4">
-                    <div class="row g-4 h-100">
-                        <!-- Book Sensitive Consultation -->
+                    <div class="row g-4">
+                        <!-- Today's Micro-Task -->
                         <div class="col-12 fade-up">
-                            <div id="booking"
-                                class="glass-card p-4 border-0 shadow-sm h-100 border-start border-primary border-4">
-                                <h4 class="mb-3">Sensitive Booking</h4>
-                                <p class="text-secondary small">Request a confidential, same-day recovery call or
-                                    emergency session.</p>
-                                <hr class="opacity-10 my-4">
-                                <div class="d-grid gap-2">
-                                    <button
-                                        class="btn btn-primary text-start px-3 py-3 rounded-3 d-flex justify-content-between align-items-center mb-2">
-                                        <span>Crisis Intervention</span>
-                                        <i class="bi bi-chevron-right small"></i>
-                                    </button>
-                                    <button
-                                        class="btn btn-outline-primary text-start px-3 py-3 rounded-3 d-flex justify-content-between align-items-center">
-                                        <span>Compassionate Review</span>
-                                        <i class="bi bi-chevron-right small"></i>
-                                    </button>
-                                </div>
+                            <div class="glass-card p-4 border-0 shadow-sm border-top border-accent border-4">
+                                <span class="badge bg-accent bg-opacity-10 text-dark small mb-3">TODAY'S MICRO-TASK</span>
+                                <h4 class="mb-3">Kitchen Surface Reset</h4>
+                                <p class="text-secondary small mb-4">Clear exactly ONE square foot of any kitchen counter. We aren't aiming for perfect, just for progress.</p>
+                                <button class="btn btn-primary w-100 py-2 rounded-3">Mark as Done</button>
                             </div>
                         </div>
 
                         <!-- Resource Library Card -->
                         <div class="col-12 fade-up">
-                            <div class="glass-card p-4 border-0 shadow-sm h-100 bg-primary text-white">
-                                <h4 class="mb-3">Resource Vault</h4>
-                                <p class="opacity-75 small">Access guides on mental wellness and home logic created by
-                                    professionals.</p>
-                                <ul class="list-unstyled mt-4 d-grid gap-3">
-                                    <li><a href="#"
-                                            class="text-white text-decoration-none small d-flex align-items-center gap-2"><i
-                                                class="bi bi-file-earmark-pdf"></i> The 15-Min Reset Guide</a></li>
-                                    <li><a href="#"
-                                            class="text-white text-decoration-none small d-flex align-items-center gap-2"><i
-                                                class="bi bi-file-earmark-pdf"></i> Calm Home Logic Manual</a></li>
-                                    <li><a href="#"
-                                            class="text-white text-decoration-none small d-flex align-items-center gap-2"><i
-                                                class="bi bi-play-circle"></i> Mindfulness for Recovery (Video)</a></li>
+                            <div class="glass-card p-4 border-0 shadow-sm bg-primary text-white">
+                                <div class="d-flex justify-content-between align-items-start mb-4">
+                                    <div>
+                                        <h4 class="mb-1">Recovery Tools</h4>
+                                        <p class="opacity-75 small">Hand-picked by your specialist.</p>
+                                    </div>
+                                    <i class="bi bi-lightbulb fs-3 text-accent"></i>
+                                </div>
+                                <ul class="list-unstyled d-grid gap-3 mb-4">
+                                    <li><a href="#" class="text-white text-decoration-none small d-flex align-items-center gap-3"><i class="bi bi-file-earmark-pdf fs-5"></i> Kitchen Logic Guide</a></li>
+                                    <li><a href="#" class="text-white text-decoration-none small d-flex align-items-center gap-3"><i class="bi bi-play-circle fs-5"></i> 5-Min Mindful Reset</a></li>
+                                    <li><a href="#" class="text-white text-decoration-none small d-flex align-items-center gap-3"><i class="bi bi-layout-sidebar-inset fs-5"></i> Shelf-Zoning Template</a></li>
                                 </ul>
-                                <a href="#" class="btn btn-light w-100 mt-4 py-2 small fw-bold">Browse All</a>
+                                <a href="#" class="btn btn-light w-100 py-2 small fw-bold mt-2">Open Resource Vault</a>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="row g-4">
-                <div class="col-md-6 fade-up">
-                    <div class="glass-card p-4 border-0 shadow-sm">
-                        <div class="d-flex align-items-center gap-3">
-                            <div class="p-3 bg-light-alt rounded-3 text-primary"><i
-                                    class="bi bi-chat-dots-fill fs-4"></i></div>
-                            <div>
-                                <h5 class="mb-1">Direct Message</h5>
-                                <p class="text-secondary small mb-0">Chat directly with your lead specialist, Elena.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 fade-up">
-                    <div class="glass-card p-4 border-0 shadow-sm">
-                        <div class="d-flex align-items-center gap-3">
-                            <div class="p-3 bg-light-alt rounded-3 text-accent"><i
-                                    class="bi bi-calendar-event fs-4"></i></div>
-                            <div>
-                                <h5 class="mb-1">Next Session</h5>
-                                <p class="text-secondary small mb-0">Scheduled for Thursday, Oct 22 at 2:00 PM
-                                    (In-home).</p>
+                        <!-- Lead Specialist Card -->
+                        <div class="col-12 fade-up">
+                            <div class="glass-card p-4 border-0 shadow-sm">
+                                <h5 class="mb-4">Your Specialist Corner</h5>
+                                <div class="d-flex align-items-center gap-3 mb-4">
+                                    <div class="rounded-circle overflow-hidden border border-2 border-primary" style="width: 60px; height: 60px;">
+                                        <img src="assets/images/team_eleanor.png" alt="Elena" class="w-100 h-100 object-fit-cover">
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-0">Elena Vance</h6>
+                                        <p class="text-secondary smaller mb-0">Lead Specialist</p>
+                                    </div>
+                                </div>
+                                <div class="p-3 bg-light-alt rounded-3 mb-4">
+                                    <p class="text-secondary small italic mb-0">"Sarah, your work on the living room was incredible. Focus on just one surface today."</p>
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-outline-primary py-2 rounded-3 small fw-bold">Direct Message</button>
+                                    <button class="btn btn-outline-primary py-2 rounded-3 small fw-bold">Emergency Call</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 
-    <!-- Simplified Dashboard Copyright -->
-    <div class="py-4 border-top">
-        <div class="container text-center">
-            <p class="text-secondary small mb-0">&copy; 2026 Clarity & Calm Dashboard. All sensitive data encrypted.</p>
-        </div>
-    </div>
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
